@@ -19233,3 +19233,2819 @@ Processing by MainController#inicio as CSS
 Completed 200 OK in 35ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1540)
 
 
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 22:30:58 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 410.3ms | Allocations: 28912)
+  Rendered layout layouts/application.html.erb (Duration: 505.4ms | Allocations: 45388)
+Completed 200 OK in 1007ms (Views: 548.6ms | ActiveRecord: 0.0ms | Allocations: 52724)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 22:31:00 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.9ms | Allocations: 243)
+Completed 200 OK in 51ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 1966)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-05-13 22:31:11 +0200
+Processing by MainController#borrar as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2217)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3240)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 3615)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-05-13 22:31:18 +0200
+Processing by MainController#borrar as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1898)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2933)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 3220)
+
+
+Started GET "/borrar.css" for 127.0.0.1 at 2024-05-13 22:31:18 +0200
+Processing by MainController#borrar as CSS
+  Rendering main/borrar.css.erb
+  Rendered main/borrar.css.erb (Duration: 1.0ms | Allocations: 190)
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 534)
+
+
+Started POST "/borrar" for 127.0.0.1 at 2024-05-13 22:31:22 +0200
+Processing by MainController#borrar as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrar_desde"=>"-1", "commit"=>"Borrar"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1708)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2738)
+Completed 200 OK in 62ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 4350)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 22:31:22 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1869)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3069)
+Completed 200 OK in 49ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 4568)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 22:31:23 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 31ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1538)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 22:32:23 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1757)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 2972)
+Completed 200 OK in 245ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 4371)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 22:32:23 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 40ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1444)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-05-13 22:32:38 +0200
+Processing by MainController#borrar as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1859)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2882)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 3160)
+
+
+Started GET "/borrar.css" for 127.0.0.1 at 2024-05-13 22:32:38 +0200
+Processing by MainController#borrar as CSS
+  Rendering main/borrar.css.erb
+  Rendered main/borrar.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 327)
+
+
+Started POST "/borrar" for 127.0.0.1 at 2024-05-13 22:32:40 +0200
+Processing by MainController#borrar as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrar_desde"=>"-1", "commit"=>"Borrar"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1668)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2691)
+Completed 200 OK in 91ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 4099)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 22:32:54 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1805)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3020)
+Completed 200 OK in 54ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 4439)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 22:32:54 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 32ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1462)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-05-13 22:32:55 +0200
+Processing by MainController#borrar as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1856)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 2879)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 3157)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 22:33:22 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 16.9ms | Allocations: 1807)
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 3028)
+Completed 200 OK in 86ms (Views: 33.0ms | ActiveRecord: 0.0ms | Allocations: 4446)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 22:33:22 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 49ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 1464)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-05-13 22:33:29 +0200
+Processing by MainController#borrar as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1893)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 2925)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 3204)
+
+
+Started GET "/borrar.css" for 127.0.0.1 at 2024-05-13 22:33:29 +0200
+Processing by MainController#borrar as CSS
+  Rendering main/borrar.css.erb
+  Rendered main/borrar.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 327)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 22:33:32 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1875)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3099)
+Completed 200 OK in 44ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 4570)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 22:33:33 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1857)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3069)
+Completed 200 OK in 39ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 4542)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 22:33:33 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 37ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1518)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-05-13 22:37:43 +0200
+Processing by MainController#borrar as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1847)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2870)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 3148)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 22:41:54 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 29.9ms | Allocations: 3895)
+  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 3981)
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 0.0ms | Allocations: 6066)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `ip' for #<ActionView::Base:0x0000000000ec90>):
+    19: 
+    20:             <article>
+    21:                 <%= form_tag "/inicio", id: "form-buscar", method: :post do %>
+    22:                     <%= label_tag :buscar-ip, "Buscar por IP: ", for: "buscar-ip", id: "texto-buscar-ip" %><br>
+    23:                     <select name="buscar_por_ip" id="buscar-por-ip">
+    24:                         <option value="1">De ayer hacia atrás</option>
+    25:                         <option value="3">De tres días hacia atrás</option>
+  
+app/views/main/inicio.html.erb:22
+app/views/main/inicio.html.erb:21
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 22:42:21 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.5ms | Allocations: 3220)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 17871)
+Completed 200 OK in 66ms (Views: 36.5ms | ActiveRecord: 0.0ms | Allocations: 19966)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 22:42:21 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.8ms | Allocations: 241)
+Completed 200 OK in 27ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 1929)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-05-13 22:48:51 +0200
+Processing by MainController#borrar as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2231)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 16718)
+Completed 200 OK in 42ms (Views: 31.2ms | ActiveRecord: 0.0ms | Allocations: 17669)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 22:48:52 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3503)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3588)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms | Allocations: 5142)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `nombre_red' for #<ActionView::Base:0x00000000015950>):
+    22:                 <select name="selected_option" class="rounded-lg border-2 border-gray-900 hover:border-red-900 w-full text-center font-serif font-bold">
+    23:                     <option value="">Todos</option>
+    24:                     <% @redes.each do |red| %>
+    25:                         <% if red['wlanConectionName'] == nombre_red %>
+    26:                             <% red['equipos'].each do |equipo| %>
+    27:                                 <option><%= equipo['ip'] %></option>
+    28:                             <% end %>
+  
+app/views/main/inicio.html.erb:25
+app/views/main/inicio.html.erb:24:in `each'
+app/views/main/inicio.html.erb:24
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 22:50:36 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 10.5ms | Allocations: 3005)
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | Allocations: 17848)
+Completed 200 OK in 62ms (Views: 38.1ms | ActiveRecord: 0.0ms | Allocations: 19945)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 22:50:36 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.7ms | Allocations: 241)
+Completed 200 OK in 34ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 1929)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:00:29 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3642)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3728)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 0.0ms | Allocations: 5790)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    22:                     <%= label_tag(:selected_IP, "IP: ", class: "text-xl font-bold font-serif text-gray-900 pr-4") %>
+    23:                     <select name="selected_IP" class="rounded-lg border-2 border-gray-900 hover:border-red-900 w-full text-center font-serif font-bold">
+    24:                         <option value="">Todos</option>
+    25:                         <% redes_unicas = @redes.map { |red| red['wlanConectionName'] }.uniq %>
+    26:                         <% redes_unicas.each do |nombre_red| %>
+    27:                             <% @redes.each do |red| %>
+    28:                                 <% if red['wlanConectionName'] == nombre_red %>
+  
+app/views/main/inicio.html.erb:25
+app/views/main/inicio.html.erb:21
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:06:25 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.5ms | Allocations: 3672)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3758)
+Completed 500 Internal Server Error in 414ms (ActiveRecord: 0.0ms | Allocations: 7004)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:                         <% redes_unicas.each do |nombre_red| %>
+    27:                             <% @redes.each do |red| %>
+    28:                                 <% if red['wlanConectionName'] == nombre_red %>
+    29:                                     <% red['equipos'].each do |equipo| %>
+    30:                                         <option><%= equipo['ip'] %></option>
+    31:                                     <% end %>
+    32:                                 <% end %>
+  
+app/views/main/inicio.html.erb:29
+app/views/main/inicio.html.erb:27:in `each'
+app/views/main/inicio.html.erb:27
+app/views/main/inicio.html.erb:26:in `each'
+app/views/main/inicio.html.erb:26
+app/views/main/inicio.html.erb:21
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:06:54 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2538)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2623)
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.0ms | Allocations: 5368)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:                         <% redes_unicas.each do |nombre_red| %>
+    27:                             <% @redes.each do |red| %>
+    28:                                 <% if red['wlanConectionName'] == nombre_red %>
+    29:                                     <% red['equipos'].each do |equipo| %>
+    30:                                         <option><%= equipo['ip'] %></option>
+    31:                                     <% end %>
+    32:                                 <% end %>
+  
+app/views/main/inicio.html.erb:29
+app/views/main/inicio.html.erb:27:in `each'
+app/views/main/inicio.html.erb:27
+app/views/main/inicio.html.erb:26:in `each'
+app/views/main/inicio.html.erb:26
+app/views/main/inicio.html.erb:21
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:08:35 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3672)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3758)
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.0ms | Allocations: 7353)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:                         <% redes_unicas.each do |nombre_red| %>
+    27:                             <% @redes.each do |red| %>
+    28:                                 <% if red['wlanConectionName'] == nombre_red %>
+    29:                                     <% red['equipos'].each do |equipo| %>
+    30:                                         <option><%= equipo['ip'] %></option>
+    31:                                     <% end %>
+    32:                                 <% end %>
+  
+app/views/main/inicio.html.erb:29
+app/views/main/inicio.html.erb:27:in `each'
+app/views/main/inicio.html.erb:27
+app/views/main/inicio.html.erb:26:in `each'
+app/views/main/inicio.html.erb:26
+app/views/main/inicio.html.erb:21
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:12:06 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 10.6ms | Allocations: 3687)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3773)
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 0.0ms | Allocations: 7368)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:                         <% redes_unicas.each do |nombre_red| %>
+    27:                             <% @redes.each do |red| %>
+    28:                                 <% if red['wlanConectionName'] == nombre_red %>
+    29:                                     <% red['equipos'].each do |equipo| %>
+    30:                                         <option value="<%= equipo['ip'] %>"><%= equipo['ip'] %></option>
+    31:                                     <% end %>
+    32:                                 <% end %>
+  
+app/views/main/inicio.html.erb:29
+app/views/main/inicio.html.erb:27:in `each'
+app/views/main/inicio.html.erb:27
+app/views/main/inicio.html.erb:26:in `each'
+app/views/main/inicio.html.erb:26
+app/views/main/inicio.html.erb:21
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:13:00 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 8.1ms | Allocations: 3686)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3772)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms | Allocations: 6229)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:                         <% redes_unicas.each do |nombre_red| %>
+    27:                             <% @redes.each do |red| %>
+    28:                                 <% if red['wlanConectionName'] == nombre_red %>
+    29:                                     <% red['equipos'].each do |equipo| %>
+    30:                                         <option value="<%= equipo['ip'] %>"><%= equipo['ip'] %></option>
+    31:                                     <% end %>
+    32:                                 <% end %>
+  
+app/views/main/inicio.html.erb:29
+app/views/main/inicio.html.erb:27:in `each'
+app/views/main/inicio.html.erb:27
+app/views/main/inicio.html.erb:26:in `each'
+app/views/main/inicio.html.erb:26
+app/views/main/inicio.html.erb:21
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:14:21 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3686)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3772)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms | Allocations: 7367)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:                         <% redes_unicas.each do |nombre_red| %>
+    27:                             <% @redes.each do |red| %>
+    28:                                 <% if red['wlanConectionName'] == nombre_red %>
+    29:                                     <% red['equipos'].each do |equipo| %>
+    30:                                         <option value="<%= equipo['ip'] %>"><%= equipo['ip'] %></option>
+    31:                                     <% end %>
+    32:                                 <% end %>
+  
+app/views/main/inicio.html.erb:29
+app/views/main/inicio.html.erb:27:in `each'
+app/views/main/inicio.html.erb:27
+app/views/main/inicio.html.erb:26:in `each'
+app/views/main/inicio.html.erb:26
+app/views/main/inicio.html.erb:21
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:15:55 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.2ms | Allocations: 3688)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3774)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms | Allocations: 7372)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    26:                         <% redes_unicas.each do |nombre_red| %>
+    27:                             <% @redes.each do |red| %>
+    28:                                 <% if red['wlanConectionName'] == nombre_red %>
+    29:                                     <% red['equipos'].each do |equipo| %>
+    30:                                         <option value="<%= equipo['ip'] %>"><%= equipo['ip'] %></option>
+    31:                                     <% end %>
+    32:                                 <% end %>
+  
+app/views/main/inicio.html.erb:29
+app/views/main/inicio.html.erb:27:in `each'
+app/views/main/inicio.html.erb:27
+app/views/main/inicio.html.erb:26:in `each'
+app/views/main/inicio.html.erb:26
+app/views/main/inicio.html.erb:21
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:16:19 +0200
+  
+SyntaxError (C:/Users/alexc/git/Reaktor_NetworkWeb/network/app/controllers/main_controller.rb:24: syntax error, unexpected ':', expecting '}'
+                params{ip: ip}
+                         ^
+):
+  
+app/controllers/main_controller.rb:24: syntax error, unexpected ':', expecting '}'
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:16:51 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.5ms | Allocations: 3371)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 18023)
+Completed 200 OK in 89ms (Views: 30.3ms | ActiveRecord: 0.0ms | Allocations: 21274)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:16:51 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.9ms | Allocations: 242)
+Completed 200 OK in 53ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 3055)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:17:50 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.7ms | Allocations: 3407)
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 18059)
+Completed 200 OK in 76ms (Views: 35.9ms | ActiveRecord: 0.0ms | Allocations: 21263)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:17:51 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.7ms | Allocations: 241)
+Completed 200 OK in 62ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3051)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:17:53 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:17:53 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2183)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3216)
+Completed 200 OK in 56ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 5805)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:17:53 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 35ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 2630)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:17:56 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:17:56 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2201)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3234)
+Completed 200 OK in 59ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 5823)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:17:56 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 36ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 2630)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:17:58 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:17:58 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2180)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3213)
+Completed 200 OK in 61ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 5802)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:17:58 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 36ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 2638)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:18:00 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:18:00 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2186)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3219)
+Completed 200 OK in 49ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 5808)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:18:01 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 35ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 2630)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:55 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 79ms (ActiveRecord: 0.0ms | Allocations: 2496)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:55 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 39ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:55 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 54ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:55 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 49ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:55 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 45ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:56 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:56 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 61ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:56 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 36ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:56 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 35ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:56 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 36ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:56 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 33ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:56 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 45ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:56 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 42ms (ActiveRecord: 0.0ms | Allocations: 2447)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:56 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 35ms (ActiveRecord: 0.0ms | Allocations: 2443)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:56 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 35ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:57 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 33ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:57 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 35ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:57 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 33ms (ActiveRecord: 0.0ms | Allocations: 2443)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:57 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 67ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:57 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 63ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:58 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 59ms (ActiveRecord: 0.0ms | Allocations: 2444)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:58 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 61ms (ActiveRecord: 0.0ms | Allocations: 2449)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:58 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 47ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:59 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 46ms (ActiveRecord: 0.0ms | Allocations: 2443)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:59 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:59 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 40ms (ActiveRecord: 0.0ms | Allocations: 2443)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:59 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 42ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:59 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 32ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:59 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 40ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:59 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 38ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:59 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 35ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:59 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 36ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:19:59 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 45ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:00 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 34ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:00 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 38ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:00 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 36ms (ActiveRecord: 0.0ms | Allocations: 2443)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:00 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 35ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:00 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 32ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:00 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 38ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:00 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 41ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:05 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 56ms (ActiveRecord: 0.0ms | Allocations: 2444)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:05 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 46ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:06 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 45ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:06 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 32ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:06 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 33ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:06 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 37ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:06 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 36ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:06 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 36ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:06 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 38ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:06 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 42ms (ActiveRecord: 0.0ms | Allocations: 2446)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:06 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 35ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:06 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 32ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:06 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 34ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:07 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 37ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:07 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 33ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:07 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 32ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:07 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 35ms (ActiveRecord: 0.0ms | Allocations: 2443)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:07 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 33ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:07 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 32ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:07 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:20:37 +0200
+Processing by MainController#inicio as HTML
+Completed 500 Internal Server Error in 4063ms (ActiveRecord: 0.0ms | Allocations: 1092)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to localhost:8080 (No connection could be made because the target machine actively refused it. - connect(2) for "localhost" port 8080)):
+  
+app/controllers/main_controller.rb:7:in `inicio'
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:24 +0200
+Processing by MainController#inicio as HTML
+Completed 500 Internal Server Error in 4077ms (ActiveRecord: 0.0ms | Allocations: 1061)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to localhost:8080 (No connection could be made because the target machine actively refused it. - connect(2) for "localhost" port 8080)):
+  
+app/controllers/main_controller.rb:7:in `inicio'
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:36 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 340ms (ActiveRecord: 0.0ms | Allocations: 2475)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:36 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 53ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:36 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 45ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:36 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 49ms (ActiveRecord: 0.0ms | Allocations: 2445)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:36 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 63ms (ActiveRecord: 0.0ms | Allocations: 2443)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:37 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 56ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:37 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 54ms (ActiveRecord: 0.0ms | Allocations: 2442)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:37 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 59ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:37 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 65ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:37 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 57ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:37 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 48ms (ActiveRecord: 0.0ms | Allocations: 2469)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:37 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 47ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:37 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 45ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:37 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 45ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:38 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 57ms (ActiveRecord: 0.0ms | Allocations: 2467)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:38 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:38 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 52ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:38 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 46ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:38 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 46ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:38 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 49ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:39 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 51ms (ActiveRecord: 0.0ms | Allocations: 2465)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:39 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 45ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:40 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 45ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:40 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 43ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:40 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 46ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:40 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 69ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:40 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 49ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:40 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 46ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:40 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 60ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:40 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 55ms (ActiveRecord: 0.0ms | Allocations: 2466)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:40 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 59ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:41 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 74ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:41 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 54ms (ActiveRecord: 0.0ms | Allocations: 2471)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:41 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 36ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:41 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 38ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:41 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 36ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:41 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 50ms (ActiveRecord: 0.0ms | Allocations: 2464)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:41 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 49ms (ActiveRecord: 0.0ms | Allocations: 2466)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:41 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 51ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:41 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 48ms (ActiveRecord: 0.0ms | Allocations: 2463)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:24:47 +0200
+Processing by MainController#inicio as HTML
+Completed 500 Internal Server Error in 4076ms (ActiveRecord: 0.0ms | Allocations: 1074)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to localhost:8080 (No connection could be made because the target machine actively refused it. - connect(2) for "localhost" port 8080)):
+  
+app/controllers/main_controller.rb:7:in `inicio'
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:33 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 353ms (ActiveRecord: 0.0ms | Allocations: 2595)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:33 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 56ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:33 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 47ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:33 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 57ms (ActiveRecord: 0.0ms | Allocations: 2490)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:33 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 47ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:34 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 46ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:34 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 62ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:34 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 69ms (ActiveRecord: 0.0ms | Allocations: 2485)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:34 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 58ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:34 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 50ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:34 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 72ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:34 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 49ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:34 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 59ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:35 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 61ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:35 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 50ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:35 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 47ms (ActiveRecord: 0.0ms | Allocations: 2488)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:35 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 48ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:35 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 45ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:35 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 49ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:35 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 45ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:36 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 83ms (ActiveRecord: 0.0ms | Allocations: 2486)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:37 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 78ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:37 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 75ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:37 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 129ms (ActiveRecord: 0.0ms | Allocations: 2482)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:37 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 45ms (ActiveRecord: 0.0ms | Allocations: 2492)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:37 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 60ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:37 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 49ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:37 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 55ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:38 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 49ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:38 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 54ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:38 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 51ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:38 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 50ms (ActiveRecord: 0.0ms | Allocations: 2485)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:38 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 48ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:38 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 41ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:38 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 40ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:38 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 39ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:38 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 50ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:38 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 40ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:39 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 52ms (ActiveRecord: 0.0ms | Allocations: 2487)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:39 +0200
+Processing by MainController#inicio as HTML
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 48ms (ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:25:44 +0200
+Processing by MainController#inicio as HTML
+Completed 500 Internal Server Error in 4086ms (ActiveRecord: 0.0ms | Allocations: 1081)
+
+
+  
+Errno::ECONNREFUSED (Failed to open TCP connection to localhost:8080 (No connection could be made because the target machine actively refused it. - connect(2) for "localhost" port 8080)):
+  
+app/controllers/main_controller.rb:7:in `inicio'
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:30:32 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 10.9ms | Allocations: 3382)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 18033)
+Completed 200 OK in 362ms (Views: 40.0ms | ActiveRecord: 0.0ms | Allocations: 20208)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:30:33 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.7ms | Allocations: 241)
+Completed 200 OK in 50ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 2014)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:30:35 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:30:35 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2187)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3220)
+Completed 200 OK in 59ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 4776)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:30:35 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 50ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1601)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:30:38 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:30:38 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1956)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2989)
+Completed 200 OK in 55ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 4295)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:30:38 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 47ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1348)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:30:44 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:30:44 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1929)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2962)
+Completed 200 OK in 41ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 4268)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:30:45 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 43ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1348)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:30:49 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:30:49 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2084)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3117)
+Completed 200 OK in 42ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 4545)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:30:49 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 38ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 1470)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:30:55 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:30:56 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2081)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3114)
+Completed 200 OK in 38ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 4542)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:30:56 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 39ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1470)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:31:03 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:31:03 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2070)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3103)
+Completed 200 OK in 44ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 4545)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:31:04 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 33ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1484)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:32:55 +0200
+Processing by MainController#inicio as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 469)
+
+
+  
+NoMethodError (undefined method `exists?' for nil:NilClass):
+  
+app/controllers/main_controller.rb:5:in `inicio'
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:33:04 +0200
+Processing by MainController#inicio as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 469)
+
+
+  
+NoMethodError (undefined method `exist?' for nil:NilClass):
+  
+app/controllers/main_controller.rb:5:in `inicio'
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:33:35 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3716)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3802)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 4720)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    22:                     <%= label_tag(:selected_IP, "IP: ", class: "text-xl font-bold font-serif text-gray-900 pr-4") %>
+    23:                     <select name="selected_IP" class="rounded-lg border-2 border-gray-900 hover:border-red-900 w-full text-center font-serif font-bold">
+    24:                         <option value="">Todos</option>
+    25:                         <% redes_unicas = @redes.map { |red| red['wlanConectionName'] }.uniq %>
+    26:                         <% redes_unicas.each do |nombre_red| %>
+    27:                             <% @redes.each do |red| %>
+    28:                                 <% if red['wlanConectionName'] == nombre_red %>
+  
+app/views/main/inicio.html.erb:25
+app/views/main/inicio.html.erb:21
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:33:51 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 9.0ms | Allocations: 3395)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 18046)
+Completed 200 OK in 75ms (Views: 32.1ms | ActiveRecord: 0.0ms | Allocations: 20223)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:33:51 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.9ms | Allocations: 241)
+Completed 200 OK in 31ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2013)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:33:53 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:33:53 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2184)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3217)
+Completed 200 OK in 43ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 4773)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:33:53 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 37ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1598)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:33:56 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:33:56 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 8.8ms | Allocations: 2202)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3235)
+Completed 200 OK in 46ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 4791)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:33:56 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 33ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1598)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:34:01 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:34:01 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2208)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3241)
+Completed 200 OK in 36ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 4797)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:34:01 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 28ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1598)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:34:08 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 8.8ms | Allocations: 2170)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 3193)
+Completed 200 OK in 45ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 4745)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:34:08 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 34ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 1598)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:35:30 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.7ms | Allocations: 3386)
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 18037)
+Completed 200 OK in 63ms (Views: 32.6ms | ActiveRecord: 0.0ms | Allocations: 20220)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:35:30 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.9ms | Allocations: 241)
+Completed 200 OK in 45ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2023)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:35:56 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:35:56 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2202)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3235)
+Completed 200 OK in 36ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 4798)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:35:56 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 32ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1606)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:41:08 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.5ms | Allocations: 3382)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 18023)
+Completed 200 OK in 70ms (Views: 32.2ms | ActiveRecord: 0.0ms | Allocations: 20200)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:41:08 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.9ms | Allocations: 241)
+Completed 200 OK in 32ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 2020)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-05-13 23:41:09 +0200
+Processing by MainController#borrar as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2131)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3154)
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 3517)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:41:10 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:41:11 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2181)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3214)
+Completed 200 OK in 39ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 4777)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:41:11 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 26ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1605)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:42:49 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.5ms | Allocations: 3185)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 17826)
+Completed 200 OK in 52ms (Views: 29.1ms | ActiveRecord: 0.0ms | Allocations: 20202)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:42:49 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.9ms | Allocations: 241)
+Completed 200 OK in 27ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2215)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:42:51 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:42:51 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2011)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3044)
+Completed 200 OK in 47ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 4802)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:42:51 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 33ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1797)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:42:53 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:42:53 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2011)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 3044)
+Completed 200 OK in 45ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 4802)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:42:53 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 36ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1788)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:42:58 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:42:59 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2011)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3044)
+Completed 200 OK in 41ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 4793)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:42:59 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 34ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1785)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:43:29 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3185)
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 17826)
+Completed 200 OK in 60ms (Views: 32.7ms | ActiveRecord: 0.0ms | Allocations: 20207)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:43:30 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.8ms | Allocations: 241)
+Completed 200 OK in 31ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 2211)
+
+
+Started POST "/inicio" for 127.0.0.1 at 2024-05-13 23:43:33 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/inicio"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:43:33 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2011)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3044)
+Completed 200 OK in 48ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 4794)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:43:33 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 22ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 1789)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:44:34 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 11.5ms | Allocations: 3717)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3803)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 4929)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    22:                     <%= label_tag(:selected_IP, "IP: ", class: "text-xl font-bold font-serif text-gray-900 pr-4") %>
+    23:                     <select name="selected_IP" class="rounded-lg border-2 border-gray-900 hover:border-red-900 w-full text-center font-serif font-bold">
+    24:                         <option value="">Todos</option>
+    25:                         <% redes_unicas = @redes.map { |red| red['wlanConectionName'] }.uniq %>
+    26:                         <% redes_unicas.each do |nombre_red| %>
+    27:                             <% @redes.each do |red| %>
+    28:                                 <% if red['wlanConectionName'] == nombre_red %>
+  
+app/views/main/inicio.html.erb:25
+app/views/main/inicio.html.erb:21
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:44:50 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3205)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 17856)
+Completed 200 OK in 71ms (Views: 29.0ms | ActiveRecord: 0.0ms | Allocations: 20234)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:44:50 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.8ms | Allocations: 241)
+Completed 200 OK in 36ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 2226)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:44:52 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/busqueda"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:44:52 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2011)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3044)
+Completed 200 OK in 31ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 4809)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:44:52 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 23ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1805)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:44:54 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/busqueda"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:44:54 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2011)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3044)
+Completed 200 OK in 33ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 4809)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:44:54 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 37ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1792)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:45:54 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 8.7ms | Allocations: 3207)
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 17858)
+Completed 200 OK in 57ms (Views: 35.7ms | ActiveRecord: 0.0ms | Allocations: 20234)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:45:54 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.9ms | Allocations: 241)
+Completed 200 OK in 26ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 2216)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:47:07 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 10.1ms | Allocations: 3186)
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 17673)
+Completed 200 OK in 69ms (Views: 36.3ms | ActiveRecord: 0.0ms | Allocations: 20047)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:47:07 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.7ms | Allocations: 241)
+Completed 200 OK in 26ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 2213)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:47:10 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/busqueda"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:47:10 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2011)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3044)
+Completed 200 OK in 31ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 4797)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:47:10 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 24ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1795)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:47:12 +0200
+  
+ActionController::RoutingError (No route matches [POST] "/busqueda"):
+  
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:47:12 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2011)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3044)
+Completed 200 OK in 31ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 4807)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:47:12 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 22ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 1813)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:48:08 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 8.4ms | Allocations: 3185)
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | Allocations: 17826)
+Completed 200 OK in 64ms (Views: 38.5ms | ActiveRecord: 0.0ms | Allocations: 20185)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:48:08 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.8ms | Allocations: 241)
+Completed 200 OK in 29ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 2216)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:48:10 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"", "commit"=>"Buscar"}
+Redirected to 
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms | Allocations: 3245)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+app/controllers/main_controller.rb:43:in `busqueda'
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:49:07 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2011)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3044)
+Completed 200 OK in 27ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 4808)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:49:07 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 34ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1804)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:49:08 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"", "commit"=>"Buscar"}
+Redirected to 
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms | Allocations: 3163)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+app/controllers/main_controller.rb:43:in `busqueda'
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:49:15 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2011)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3044)
+Completed 200 OK in 31ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 4790)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:49:15 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 32ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1812)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-05-13 23:49:16 +0200
+Processing by MainController#borrar as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2168)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 3201)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 3563)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:49:17 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"192.168.1.18", "commit"=>"Buscar"}
+Redirected to 
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms | Allocations: 3191)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+app/controllers/main_controller.rb:43:in `busqueda'
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:49:58 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.8ms | Allocations: 3205)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 17856)
+Completed 200 OK in 53ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 20250)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:49:58 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.7ms | Allocations: 241)
+Completed 200 OK in 31ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 2204)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-05-13 23:49:59 +0200
+Processing by MainController#borrar as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2162)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3196)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 3559)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:50:01 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"192.168.1.14", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 22ms (ActiveRecord: 0.0ms | Allocations: 1645)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:50:01 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2008)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3031)
+Completed 200 OK in 32ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 4828)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:50:01 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 25ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1786)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:50:49 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1993)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3018)
+Completed 200 OK in 29ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 4763)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:50:50 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 29ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1795)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-05-13 23:50:50 +0200
+Processing by MainController#borrar as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1862)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2885)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 3163)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:50:52 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"192.168.1.101", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 24ms (ActiveRecord: 0.0ms | Allocations: 1602)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:50:52 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1991)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3014)
+Completed 200 OK in 46ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 4780)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:50:52 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 26ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1801)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:51:31 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1991)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3014)
+Completed 200 OK in 308ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 4789)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:51:32 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 52ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1819)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:51:33 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"192.168.1.18", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 30ms (ActiveRecord: 0.0ms | Allocations: 1278)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:51:33 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1991)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3014)
+Completed 200 OK in 60ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 4784)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:51:34 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 46ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1844)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:54:35 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1991)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3014)
+Completed 200 OK in 58ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 4790)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:54:35 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 40ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 1929)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:54:36 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 20ms (ActiveRecord: 0.0ms | Allocations: 1317)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:54:36 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1991)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3014)
+Completed 200 OK in 48ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 4817)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:54:36 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 37ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1826)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-05-13 23:55:01 +0200
+Processing by MainController#borrar as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1848)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2872)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 3150)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:55:02 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 208ms (ActiveRecord: 0.0ms | Allocations: 1295)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:55:02 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2011)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3037)
+Completed 200 OK in 125ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 4834)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:55:02 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 39ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1832)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:55:14 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"192.168.1.100", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 22ms (ActiveRecord: 0.0ms | Allocations: 1311)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:55:14 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1760)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2784)
+Completed 200 OK in 55ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 4322)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:55:14 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 36ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 1609)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-05-13 23:56:56 +0200
+Processing by MainController#borrar as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1848)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2871)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 3149)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:56:56 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 194ms (ActiveRecord: 0.0ms | Allocations: 1297)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:56:56 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1991)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3014)
+Completed 200 OK in 133ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 4826)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:56:56 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 51ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1865)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:58:12 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 238ms (ActiveRecord: 0.0ms | Allocations: 1302)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:58:12 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1951)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2974)
+Completed 200 OK in 98ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 4787)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:58:13 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 41ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1854)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:59:13 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"192.168.1.18", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 238ms (ActiveRecord: 0.0ms | Allocations: 1318)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:59:13 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1901)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2924)
+Completed 200 OK in 109ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 4725)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:59:14 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 63ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1824)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-13 23:59:33 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"192.168.1.103", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 36ms (ActiveRecord: 0.0ms | Allocations: 1308)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-13 23:59:33 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1888)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2911)
+Completed 200 OK in 70ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 4665)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-13 23:59:33 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 40ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 1798)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-14 00:03:59 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 315ms (ActiveRecord: 0.0ms | Allocations: 1619)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-14 00:03:59 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1680)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2703)
+Completed 200 OK in 71ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 4033)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-14 00:03:59 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 22ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1353)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-05-14 00:04:17 +0200
+Processing by MainController#borrar as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1883)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2916)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3194)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-14 00:04:18 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 39ms (ActiveRecord: 0.0ms | Allocations: 1614)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-14 00:04:18 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1906)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2932)
+Completed 200 OK in 48ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 4500)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-14 00:04:18 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 27ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1627)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-14 00:04:45 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 257ms (ActiveRecord: 0.0ms | Allocations: 1610)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-14 00:04:46 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1920)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2945)
+Completed 200 OK in 77ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 4575)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-14 00:04:46 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 39ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1659)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-14 00:06:35 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"192.168.1.100", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 39ms (ActiveRecord: 0.0ms | Allocations: 1597)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-14 00:06:35 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2040)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3063)
+Completed 200 OK in 47ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 4809)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-14 00:06:35 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 27ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1802)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-14 00:07:01 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 324ms (ActiveRecord: 0.0ms | Allocations: 1627)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-14 00:07:01 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2040)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3063)
+Completed 200 OK in 79ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 4848)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-14 00:07:01 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 67ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1811)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-14 00:08:12 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 320ms (ActiveRecord: 0.0ms | Allocations: 1616)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-14 00:08:13 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1988)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3011)
+Completed 200 OK in 113ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 4753)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-14 00:08:13 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 38ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1804)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-14 00:08:17 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"192.168.1.100", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 48ms (ActiveRecord: 0.0ms | Allocations: 1612)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-14 00:08:17 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1988)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3011)
+Completed 200 OK in 46ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 4759)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-14 00:08:17 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 43ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 1825)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-05-14 00:09:17 +0200
+Processing by MainController#borrar as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1860)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2883)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 3161)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-14 00:09:18 +0200
+Processing by MainController#inicio as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1988)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3011)
+Completed 200 OK in 274ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 4789)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-14 00:09:19 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 41ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1803)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-14 00:09:21 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"192.168.1.100", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 106ms (ActiveRecord: 0.0ms | Allocations: 1616)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-14 00:09:21 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2008)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3041)
+Completed 200 OK in 71ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 4813)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-14 00:09:21 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 45ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1819)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-14 00:10:15 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"192.168.1.18", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 301ms (ActiveRecord: 0.0ms | Allocations: 1617)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-14 00:10:16 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1907)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2932)
+Completed 200 OK in 78ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 4616)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-14 00:10:16 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 42ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1749)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-14 00:11:08 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"192.168.1.14", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 298ms (ActiveRecord: 0.0ms | Allocations: 1630)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-14 00:11:08 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1963)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2986)
+Completed 200 OK in 88ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 4771)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-14 00:11:09 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 41ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1838)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-14 00:12:44 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"192.168.1.100", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 287ms (ActiveRecord: 0.0ms | Allocations: 1606)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-14 00:12:44 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1965)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2988)
+Completed 200 OK in 78ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 4799)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-14 00:12:44 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 39ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1840)
+
+
+Started POST "/busqueda" for 127.0.0.1 at 2024-05-14 00:14:02 +0200
+Processing by MainController#busqueda as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "selected_IP"=>"192.168.1.14", "commit"=>"Buscar"}
+Redirected to http://127.0.0.1:3000/inicio
+Completed 302 Found in 268ms (ActiveRecord: 0.0ms | Allocations: 1603)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-05-14 00:14:02 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1963)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2986)
+Completed 200 OK in 92ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 4825)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-05-14 00:14:02 +0200
+Processing by MainController#inicio as CSS
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 41ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1889)
+
+
