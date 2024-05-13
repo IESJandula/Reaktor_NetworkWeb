@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="borrar.css">
+        <%= javascript_include_tag 'NetworkServer' %>
+        <title>Network Server</title>
+    </head>
+    <body>
+        <header>
+            <h1>Network Server</h1>
+
+            <div id="menu">
+                <%= link_to t("Inicio"), "/inicio"%>
+                <%= link_to t("Borrar Redes"), "/borrar"%>
+            </div>
+        </header>
+
+        <main>
+            <article>
+                <%= form_tag "/borrar", id: "form-borrar", method: :post do %>
+                    <%= label_tag :borrar_desde, "Borrar desde: ", for: "borrar-desde", id: "texto-borrar-desde" %><br>
+                    <select name="borrar_desde" id="borrar-desde">
+                        <option value="1">De ayer hacia atrás</option>
+                        <option value="3">De tres días hacia atrás</option>
+                        <option value="7">De una semana hacia atrás</option>
+                        <option value="31">De un mes hacia atrás</option>
+                        <option value= "-1">Todo</option>
+                    </select><br>
+                    <%= submit_tag "Borrar", id: "borrar-boton" %>
+                <% end %>
+            </article>
+        </main>
+	</body>
+</html>

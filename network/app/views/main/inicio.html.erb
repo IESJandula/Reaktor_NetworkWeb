@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="inicio.css">
+        <%= javascript_include_tag 'NetworkServer' %>
+        <title>Network Server</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="titulo">Network Server</h1>
+            <div id="menu">
+                <%= link_to t("Inicio"), "/inicio"%>
+                <%= link_to t("Borrar Redes"), "/borrar"%>
+        </header>
+
+        <main>
+
+            <ul id="listaRedes">
+                <% redes_unicas = @redes.map { |red| red['wlanConectionName'] }.uniq %>
+                <% redes_unicas.each do |nombre_red| %>
+                    <li style="cursor: pointer; display: inline-block; font-size: 30px;" name="nombreRed" onclick="toggleArticulos(this)">
+                        <% if nombre_red.nil? || nombre_red.empty? %>
+                            <% red_actual = @redes.find { |red| red['wlanConectionName'].nil? || red['wlanConectionName'].empty? } %>
+                            <% if red_actual.present? %>
+                                &#9679; LAN: <%= red_actual['nombre'] %>
+                            <% end %>
+                        <% else %>
+                            &#9679; Wi-Fi: <%= nombre_red %>
+                        <% end %>
+                        <div class="redContenido" style="display: none;">
+                            <% @redes.each do |red| %>
+                                <% if red['wlanConectionName'] == nombre_red %>
+                                    <% red['equipos'].each do |equipo| %>
+                                        <% if equipo['tipo'] == "STANDARD" %>
+                                            <article class="tarjeta-verde">
+                                        <% elsif equipo['tipo'] == "IMPRESORA" %>
+                                            <article class="tarjeta-roja">
+                                        <% else %>
+                                            <article class="tarjeta">
+                                        <% end %>
+                                            <div class="contenedor" onmouseover="mostrarInformacion(this)" onmouseout="ocultarInformacion()" data-so="<%= equipo['so'] %>" data-puertos="<%= equipo['puertos'] %>">
+                                                <h1 id="ip">IP: <%= equipo['ip'] %></h1>
+                                                <% if equipo['tipo'].present? %>
+                                                    <p id="mac"><strong>MAC:</strong> <%= equipo['mac'] %> || <strong>TIPO:</strong> <%= equipo['tipo'] %></p>
+                                                <% else %>
+                                                    <p id="mac"><strong>MAC:</strong> <%= equipo['mac'] %></p>
+                                                <% end %>
+                                                <p id="mac"><strong>FECHA:</strong> <%= red['fecha'] %></p>
+                                                <div id="informacionOculta" style="display: none;">
+                                                    <p id="so"><strong>SO:</strong> <%= equipo['so'] %></p>
+                                                    <p id="puertos"><strong>Puertos:</strong></p>
+                                                    <ul id="listaPuertos">
+                                                        <% equipo['puertos'].each do |puerto| %>
+                                                            <li><strong>Número:</strong> <%= puerto['puertoId']['numero'] %>, <strong>Nombre:</strong> <%= puerto['nombre'] %></li>
+                                                        <% end %>
+                                                    </ul>
+                                                    <p id="idEquipo"><strong>ID Equipo:</strong> <%= equipo['id'] %></p>
+                                                </div>
+                                            </div>
+                                            <div id="informacionTarjeta" class="informacion-tarjeta" style="display: none;"></div>
+                                        </article>
+                                    <% end %>
+                                <% end %>
+                            <% end %>
+                        </div>
+                    </li>
+                    <br>
+                <% end %>
+            </ul>
+        </main>
+	</body>
+</html>
