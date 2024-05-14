@@ -18,22 +18,24 @@
         <main>
 
             <article>
-                <%= form_tag "/busqueda", id: "form-buscar", method: :post do %>
-                    <%= label_tag(:selected_IP, "IP: ", class: "text-xl font-bold font-serif text-gray-900 pr-4") %>
-                    <select name="selected_IP" class="rounded-lg border-2 border-gray-900 hover:border-red-900 w-full text-center font-serif font-bold">
-                        <option value="">Todos</option>
-                        <% redes_unicas = @redes.map { |red| red['wlanConectionName'] }.uniq %>
-                        <% redes_unicas.each do |nombre_red| %>
-                            <% @redes.each do |red| %>
-                                <% if red['wlanConectionName'] == nombre_red %>
-                                    <% red['equipos'].each do |equipo| %>
-                                        <option value="<%= equipo['ip'] %>"><%= equipo['ip'] %></option>
-                                    <% end %>
-                                <% end %>
+                <%= form_tag "/inicio", id: "form-buscar", method: :get do %>
+                <%= label_tag(:selected_IP, "BUSQUEDA POR IP ", class: "text-xl font-bold font-serif text-gray-900 pr-4", id: "texto-buscarIp") %>
+                <select name="selected_IP" class="rounded-lg border-2 border-gray-900 hover:border-red-900 w-full text-center font-serif font-bold" id="buscarIp">
+                    <option value="">Todos</option>
+                    <% if @redes.present? %>
+                    <% redes_unicas = @redes.map { |red| red['wlanConectionName'] }.uniq %>
+                    <% redes_unicas.each do |nombre_red| %>
+                        <% @redes.each do |red| %>
+                        <% if red['wlanConectionName'] == nombre_red %>
+                            <% red['equipos'].each do |equipo| %>
+                            <option value="<%= equipo['ip'] %>"><%= equipo['ip'] %></option>
                             <% end %>
                         <% end %>
-                    </select>
-                    <%= submit_tag "Buscar", id: "buscar-boton" %>
+                        <% end %>
+                    <% end %>
+                    <% end %>
+                </select>
+                <%= submit_tag "Buscar", id: "buscar-boton" %>
                 <% end %>
             </article>
 

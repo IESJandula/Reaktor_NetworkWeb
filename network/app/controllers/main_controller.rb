@@ -2,46 +2,26 @@ require 'rest-client'
 require 'json'
 class MainController < ApplicationController
     def inicio
-        p session[:busqueda]
-        p session[:busqueda].present?
-        p "------------------------------------------------------------------------------------------------------------------"
-        unless session[:busqueda].present?
-            urlRedes = "http://localhost:8080/net/get/all/data"
-            begin
-                responseRedes = RestClient.get(
-                    urlRedes
-                ) 
-                @redes  = JSON.parse(responseRedes.body)
-                puts @redes
-                puts responseRedes.code
-            rescue RestClient::ExceptionWithResponse => e
-                puts "Error: #{e.response}"
-            end
-        else 
-            @redes = session[:busqueda]
-        end
-    end
-
-    def busqueda
         urlBuscar = "http://localhost:8080/net/red/by/search"
         puts params
-        p "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-
-        ip = params[:selected_IP]
+        
+        ip = params[:selected_IP].present? ? params[:selected_IP] : "" # Si está presente, toma el valor, de lo contrario, toma una cadena vacía
+        
         begin
-            responseBuscar = RestClient.post(
-                urlBuscar,
-                {ip: ip}
+            responseBuscar = RestClient.get(
+            urlBuscar,
+            params: { ip: ip } # Asegúrate de pasar el parámetro como parte de los parámetros de la solicitud
             ) 
-            session[:busqueda]  = JSON.parse(responseBuscar.body)
+            @redes = JSON.parse(responseBuscar.body)
             puts params[:selected_IP]
-            puts session[:busqueda]
+            puts @redes
             puts responseBuscar.code
         rescue RestClient::ExceptionWithResponse => e
             puts "Error: #{e.response}"
+            @redes = [] # Si hay un error, asigna una lista vacía a @redes
         end
-        redirect_to "/inicio"
     end
+
 
     def borrar
         urlBorrar = "http://localhost:8080/net/red/deleteAllBefore"
