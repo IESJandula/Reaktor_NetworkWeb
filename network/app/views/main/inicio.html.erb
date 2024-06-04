@@ -13,32 +13,94 @@
             <div id="menu">
                 <%= link_to t("Inicio"), "/inicio"%>
                 <%= link_to t("Borrar Redes"), "/borrar"%>
+            </div>
         </header>
 
         <main>
 
-            <article>
-                <%= form_tag "/inicio", id: "form-buscar", method: :get do %>
-                <%= label_tag(:selected_IP, "BUSQUEDA POR IP ", class: "text-xl font-bold font-serif text-gray-900 pr-4", id: "texto-buscarIp") %>
-                <select name="selected_IP" class="rounded-lg border-2 border-gray-900 hover:border-red-900 w-full text-center font-serif font-bold" id="buscarIp">
-                    <option value="">Todos</option>
-                    <% if @redes.present? %>
-                    <% redes_unicas = @redes.map { |red| red['wlanConectionName'] }.uniq %>
-                    <% redes_unicas.each do |nombre_red| %>
-                        <% @redes.each do |red| %>
-                        <% if red['wlanConectionName'] == nombre_red %>
-                            <% red['equipos'].each do |equipo| %>
-                            <option value="<%= equipo['ip'] %>"><%= equipo['ip'] %></option>
+            <div id="filtros">
+                <article style="display: inline-block; margin-right: 10px;">
+                    <%= form_tag "/inicio", id: "form-buscar", method: :get do %>
+                        <%= label_tag(:selected_IP, "BUSQUEDA POR IP ", class: "text-xl font-bold font-serif text-gray-900 pr-4", id: "texto-buscar") %>
+                        <select name="selected_IP" class="rounded-lg border-2 border-gray-900 hover:border-red-900 w-full text-center font-serif font-bold" id="buscar">
+                            <option value="">Todos</option>
+                            <% if @redes.present? %>
+                            <% redes_unicas = @redes.map { |red| red['wlanConectionName'] }.uniq %>
+                            <% redes_unicas.each do |nombre_red| %>
+                                <% @redes.each do |red| %>
+                                <% if red['wlanConectionName'] == nombre_red %>
+                                    <% red['equipos'].each do |equipo| %>
+                                        <% if params[:selected_IP] == equipo['ip'] %>
+                                            <option value="<%= equipo['ip'] %>" selected><%= equipo['ip'] %></option>
+                                        <% else %>
+                                            <option value="<%= equipo['ip'] %>"><%= equipo['ip'] %></option>
+                                        <% end %>
+                                    <% end %>
+                                <% end %>
+                                <% end %>
                             <% end %>
-                        <% end %>
-                        <% end %>
+                            <% end %>
+                        </select>
+                        <%= submit_tag "Buscar", id: "buscar-boton" %>
                     <% end %>
+                </article>
+            
+                <article style="display: inline-block; margin-right: 10px;">
+                    <%= form_tag "/inicio", id: "form-buscar", method: :get do %>
+                        <%= label_tag(:selected_mac, "BUSQUEDA POR MAC ", class: "text-xl font-bold font-serif text-gray-900 pr-4", id: "texto-buscar") %>
+                        <select name="selected_mac" class="rounded-lg border-2 border-gray-900 hover:border-red-900 w-full text-center font-serif font-bold" id="buscar">
+                            <option value="">Todos</option>
+                            <% if @redes.present? %>
+                            <% redes_unicas = @redes.map { |red| red['wlanConectionName'] }.uniq %>
+                            <% redes_unicas.each do |nombre_red| %>
+                                <% @redes.each do |red| %>
+                                <% if red['wlanConectionName'] == nombre_red %>
+                                    <% red['equipos'].each do |equipo| %>
+                                        <% if params[:selected_mac] == equipo['mac'] %>
+                                            <option value="<%= equipo['mac'] %>" selected><%= equipo['mac'] %></option>
+                                        <% else %>
+                                            <option value="<%= equipo['mac'] %>"><%= equipo['mac'] %></option>
+                                        <% end %>
+                                    <% end %>
+                                <% end %>
+                                <% end %>
+                            <% end %>
+                            <% end %>
+                        </select>
+                        <%= submit_tag "Buscar", id: "buscar-boton" %>
                     <% end %>
-                </select>
-                <%= submit_tag "Buscar", id: "buscar-boton" %>
-                <% end %>
-            </article>
+                </article>
+            
+                <article style="display: inline-block; margin-right: 10px;">
+                    <%= form_tag "/inicio", id: "form-buscar", method: :get do %>
+                        <%= label_tag(:selected_tipo, "BUSQUEDA POR TIPO ", class: "text-xl font-bold font-serif text-gray-900 pr-4", id: "texto-buscar") %>
+                        <select name="selected_tipo" class="rounded-lg border-2 border-gray-900 hover:border-red-900 w-full text-center font-serif font-bold" id="buscar">
+                            <option value="">Todos</option>
+                            <% if @redes.present? %>
+                                <% tipos_unicos = Set.new %>
+                                <% @redes.each do |red| %>
+                                    <% red['equipos'].each do |equipo| %>
+                                        <% if equipo['tipo'] != nil %>
+                                            <% tipos_unicos.add(equipo['tipo']) %>
+                                        <% end %>
+                                    <% end %>
+                                <% end %>
+                                <% tipos_unicos.each do |tipo| %>
+                                    <% if params[:selected_tipo] == tipo %>
+                                        <option value="<%= tipo %>" selected><%= tipo %></option>
+                                    <% else %>
+                                        <option value="<%= tipo %>"><%= tipo %></option>
+                                    <% end %>
+                                <% end %>
+                            <% end %>
+                        </select>
+                        <%= submit_tag "Buscar", id: "buscar-boton" %>
+                    <% end %>
+                </article>
+            </div>
+    
 
+            <%= button_to 'Exportar a CSV', export_csv_path(format: :csv), method: :get, id: 'botonCSV' %>
             <ul id="listaRedes">
                 <% redes_unicas = @redes.map { |red| red['wlanConectionName'] }.uniq %>
                 <% redes_unicas.each do |nombre_red| %>
