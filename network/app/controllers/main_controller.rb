@@ -31,34 +31,34 @@ class MainController < ApplicationController
     end
 
     def export_csv
-        inicio
-        redes = @redes
+      inicio
+      redes = @redes
     
-        csv_data = CSV.generate(headers: true) do |csv|
-          csv << ['Nombre de Red', 'Nombre', 'IP', 'MAC', 'Tipo', 'Fecha', 'SO', 'Puertos', 'ID Equipo']
+      csv_data = CSV.generate(headers: true) do |csv|
+        csv << ['Nombre de Red', 'Nombre', 'IP', 'MAC', 'Tipo', 'Fecha', 'SO', 'Puertos', 'ID Equipo']
     
-          redes.each do |red|
-            red['equipos'].each do |equipo|
-              puertos = equipo['puertos'].map { |puerto| "Número: #{puerto['puertoId']['numero']}, Nombre: #{puerto['nombre']}" }.join(' | ')
-              csv << [
-                red['wlanConectionName'] || 'LAN',
-                red['nombre'],
-                equipo['ip'],
-                equipo['mac'],
-                equipo['tipo'],
-                red['fecha'],
-                equipo['so'],
-                puertos,
-                equipo['id']
-              ]
-            end
+        redes.each do |red|
+          red['equipos'].each do |equipo|
+            puertos = equipo['puertos'].map { |puerto| "Número: #{puerto['puertoId']['numero']}, Nombre: #{puerto['nombre']}" }.join(' | ')
+            csv << [
+              red['wlanConectionName'] || 'LAN',
+              red['nombre'],
+              equipo['ip'] + "\u200B",
+              equipo['mac'],
+              equipo['tipo'],
+              red['fecha'],
+              equipo['so'],
+              puertos,
+              equipo['id']
+            ]
           end
         end
-    
-        respond_to do |format|
-          format.csv { send_data csv_data, filename: "escaneo-redes-#{Date.today}.csv" }
-        end
       end
+    
+      respond_to do |format|
+        format.csv { send_data csv_data, filename: "escaneo-redes-#{Time.now.strftime('%Y-%m-%d_%H-%M-%S')}.csv" }
+      end
+    end
     
     def borrar
         urlBorrar = "http://localhost:8080/net/red/deleteAllBefore"
