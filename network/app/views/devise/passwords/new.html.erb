@@ -1,0 +1,88 @@
+<div class="forgot-password-box">
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Send me reset password instructions" %>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+</div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+  }
+
+  .forgot-password-box {
+    border: 2px solid #007BFF;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .forgot-password-box h2 {
+    text-align: center;
+    color: #007BFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .forgot-password-box .field,
+  .forgot-password-box .actions {
+    margin-bottom: 15px;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .forgot-password-box .actions {
+    text-align: center;
+  }
+
+  .forgot-password-box input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .forgot-password-box input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .forgot-password-box input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  .forgot-password-box label {
+    font-weight: bold;
+    width: 100%;
+  }
+</style>
