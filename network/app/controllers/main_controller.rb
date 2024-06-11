@@ -43,15 +43,15 @@ class MainController < ApplicationController
         red['equipos'].each do |equipo|
           puertos = equipo['puertos'].map { |puerto| "Número: #{puerto['puertoId']['numero']}, Nombre: #{puerto['nombre']}" }.join(' | ')
           csv << [
-            red['wlanConectionName'] || 'LAN',
-            red['nombre'],
-            equipo['ip'] + "\u200B",
-            equipo['mac'],
-            equipo['tipo'],
-            red['fecha'],
-            equipo['so'],
-            puertos,
-            equipo['id']
+            red['wlanConectionName'].presence || 'LAN',
+            red['nombre'].presence || 'N/A',
+            (equipo['ip'].presence || 'N/A') + "\u200B",
+            equipo['mac'].presence || 'N/A',
+            equipo['tipo'].presence || 'N/A',
+            red['fecha'].presence || 'N/A',
+            equipo['so'].presence || 'N/A',
+            puertos.presence || 'N/A',
+            equipo['id'].presence || 'N/A'
           ]
         end
       end
@@ -61,6 +61,7 @@ class MainController < ApplicationController
       format.csv { send_data csv_data, filename: "escaneo-redes-#{Time.now.strftime('%Y-%m-%d_%H-%M-%S')}.csv" }
     end
   end
+  
   
   def borrar
     urlBorrar = "http://localhost:8080/net/red/deleteAllBefore"
