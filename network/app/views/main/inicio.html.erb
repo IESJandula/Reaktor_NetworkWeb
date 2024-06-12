@@ -13,7 +13,7 @@
             <div id="menu">
                 <%= link_to t("Inicio"), "/inicio"%>
                 <%= link_to t("Borrar Redes"), "/borrar"%>
-                <p style="color:white; font-weight: bold"> USUARIO: <%= current_user.email %> &nbsp</p>
+                <p style="color:white; font-weight: bold">&nbsp USUARIO: <%= current_user.email %> &nbsp</p>
                 <% if user_signed_in? %>
                     <%= button_to(
                         "Cerrar Sesión",
