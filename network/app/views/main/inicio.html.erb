@@ -13,6 +13,15 @@
             <div id="menu">
                 <%= link_to t("Inicio"), "/inicio"%>
                 <%= link_to t("Borrar Redes"), "/borrar"%>
+                <p style="color:white; font-weight: bold"> USUARIO: <%= current_user.email %> &nbsp</p>
+                <% if user_signed_in? %>
+                    <%= button_to(
+                        "Cerrar Sesión",
+                        destroy_user_session_path,
+                        method: :delete,
+                        class: 'btn-send bg-red-50 text-red-600 rounded-xl hover:bg-red-900 hover:text-red-50 py-5 px-8  font-bold font-serif mx-4'
+                    ) %>
+                <% end %>
             </div>
         </header>
 
