@@ -49,7 +49,7 @@ class MainController < ApplicationController
             equipo['mac'].presence || 'N/A',
             equipo['tipo'].presence || 'N/A',
             red['fecha'].presence || 'N/A',
-            equipo['so'].presence || 'N/A',
+            equipo['so'].presence || 'No detectado',
             puertos.presence || 'N/A',
             equipo['id'].presence || 'N/A'
           ]

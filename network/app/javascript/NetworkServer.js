@@ -29,3 +29,12 @@ function ocultarInformacion() {
   var informacionTarjeta = document.getElementById('informacionTarjeta');
   informacionTarjeta.style.display = 'none';
 }
+
+document.getElementById('form-borrar').addEventListener('submit', function(event) {
+  var confirmacion = window.confirm("¿Estás seguro de que quieres borrar?");
+  if (!confirmacion) {
+      event.preventDefault(); // Evitar el envío del formulario si no se confirma
+  } else {
+      alert("Borrado exitoso"); // Mostrar mensaje de éxito
+  }
+});

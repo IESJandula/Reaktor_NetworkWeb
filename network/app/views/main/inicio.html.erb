@@ -30,7 +30,7 @@
             <div id="filtros">
                 <article style="display: inline-block; margin-right: 10px;">
                     <%= form_tag "/inicio", id: "form-buscar", method: :get do %>
-                        <%= label_tag(:selected_IP, "BUSQUEDA POR IP ", class: "text-xl font-bold font-serif text-gray-900 pr-4", id: "texto-buscar") %>
+                        <%= label_tag(:selected_IP, "BÚSQUEDA POR IP ", class: "text-xl font-bold font-serif text-gray-900 pr-4", id: "texto-buscar") %>
                         <select name="selected_IP" class="rounded-lg border-2 border-gray-900 hover:border-red-900 w-full text-center font-serif font-bold" id="buscar">
                             <option value="">Todos</option>
                             <% if @redes.present? %>
@@ -56,7 +56,7 @@
             
                 <article style="display: inline-block; margin-right: 10px;">
                     <%= form_tag "/inicio", id: "form-buscar", method: :get do %>
-                        <%= label_tag(:selected_mac, "BUSQUEDA POR MAC ", class: "text-xl font-bold font-serif text-gray-900 pr-4", id: "texto-buscar") %>
+                        <%= label_tag(:selected_mac, "BÚSQUEDA POR MAC ", class: "text-xl font-bold font-serif text-gray-900 pr-4", id: "texto-buscar") %>
                         <select name="selected_mac" class="rounded-lg border-2 border-gray-900 hover:border-red-900 w-full text-center font-serif font-bold" id="buscar">
                             <option value="">Todos</option>
                             <% if @redes.present? %>
@@ -82,7 +82,7 @@
             
                 <article style="display: inline-block; margin-right: 10px;">
                     <%= form_tag "/inicio", id: "form-buscar", method: :get do %>
-                        <%= label_tag(:selected_tipo, "BUSQUEDA POR TIPO ", class: "text-xl font-bold font-serif text-gray-900 pr-4", id: "texto-buscar") %>
+                        <%= label_tag(:selected_tipo, "BÚSQUEDA POR TIPO ", class: "text-xl font-bold font-serif text-gray-900 pr-4", id: "texto-buscar") %>
                         <select name="selected_tipo" class="rounded-lg border-2 border-gray-900 hover:border-red-900 w-full text-center font-serif font-bold" id="buscar">
                             <option value="">Todos</option>
                             <% if @redes.present? %>
@@ -140,9 +140,9 @@
                                                 <% else %>
                                                     <p id="mac"><strong>MAC:</strong> <%= equipo['mac'] %></p>
                                                 <% end %>
-                                                <p id="mac"><strong>FECHA:</strong> <%= red['fecha'] %></p>
+                                                <p id="so"> <strong>SO:</strong> <%= equipo['so'].present? ? equipo['so'] : 'No detectado' %></p>
                                                 <div id="informacionOculta" style="display: none;">
-                                                    <p id="so"><strong>SO:</strong> <%= equipo['so'] %></p>
+                                                    <p id="fecha"><strong>FECHA:<%= formatted_date(red['fecha']) %></p>
                                                     <p id="puertos"><strong>Puertos:</strong></p>
                                                     <ul id="listaPuertos">
                                                         <% equipo['puertos'].each do |puerto| %>
