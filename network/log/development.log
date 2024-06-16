@@ -56972,3 +56972,974 @@ Sent data escaneo-redes-2024-06-14_12-07-23.csv (5.4ms)
 Completed 200 OK in 83ms (Views: 4.9ms | ActiveRecord: 5.8ms | Allocations: 9668)
 
 
+Started GET "/inicio" for 127.0.0.1 at 2024-06-16 16:39:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#inicio as HTML
+Completed 401 Unauthorized in 71ms (ActiveRecord: 0.0ms | Allocations: 2288)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-06-16 16:39:19 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 355)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 122.0ms | Allocations: 3091)
+  Rendered layout layouts/application.html.erb (Duration: 1211.5ms | Allocations: 44926)
+Completed 200 OK in 1523ms (Views: 1367.1ms | ActiveRecord: 3.2ms | Allocations: 62721)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2024-06-16 16:40:29 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"aa@aa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aa@aa"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/inicio
+Completed 303 See Other in 422ms (ActiveRecord: 0.7ms | Allocations: 7297)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-06-16 16:40:29 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 23.3ms | Allocations: 4680)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 5730)
+Completed 200 OK in 298ms (Views: 31.0ms | ActiveRecord: 0.2ms | Allocations: 10407)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:40:30 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.9ms | Allocations: 290)
+Completed 200 OK in 53ms (Views: 8.6ms | ActiveRecord: 0.1ms | Allocations: 3351)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-06-16 16:40:32 +0200
+Processing by MainController#borrar as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1961)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2984)
+Completed 200 OK in 37ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 4674)
+
+
+Started GET "/inicio?selected_IP=192.168.1.14&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:40:49 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_IP"=>"192.168.1.14", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2024)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3047)
+Completed 200 OK in 29ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 5587)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:40:49 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 27ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2852)
+
+
+Started GET "/inicio?selected_IP=&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:40:53 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_IP"=>"", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2334)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 3367)
+Completed 200 OK in 50ms (Views: 10.6ms | ActiveRecord: 0.1ms | Allocations: 6171)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:40:53 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 31ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2823)
+
+
+Started GET "/inicio?selected_mac=18%3A34%3AAF%3A10%3A91%3A2A&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:40:59 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_mac"=>"18:34:AF:10:91:2A", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.8ms | Allocations: 2061)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3084)
+Completed 200 OK in 34ms (Views: 12.3ms | ActiveRecord: 0.1ms | Allocations: 5710)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:40:59 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 30ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 2823)
+
+
+Started GET "/inicio?selected_mac=&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:41:06 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_mac"=>"", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.8ms | Allocations: 2290)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 3313)
+Completed 200 OK in 31ms (Views: 11.2ms | ActiveRecord: 0.1ms | Allocations: 6087)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:41:06 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 24ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 2829)
+
+
+Started GET "/inicio?selected_tipo=STANDARD&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:41:12 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_tipo"=>"STANDARD", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2291)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3314)
+Completed 200 OK in 36ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 6087)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:41:12 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 30ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2832)
+
+
+Started GET "/inicio?selected_tipo=&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:41:20 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_tipo"=>"", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2290)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 3318)
+Completed 200 OK in 35ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 6106)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:41:20 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 22ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2850)
+
+
+Started GET "/export_csv.csv" for 127.0.0.1 at 2024-06-16 16:41:25 +0200
+Processing by MainController#export_csv as CSV
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Sent data escaneo-redes-2024-06-16_16-41-25.csv (62.0ms)
+Completed 200 OK in 92ms (Views: 61.8ms | ActiveRecord: 0.1ms | Allocations: 9634)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-06-16 16:41:36 +0200
+Processing by MainController#borrar as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1689)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2717)
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 4305)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-06-16 16:41:36 +0200
+Processing by MainController#borrar as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1669)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2692)
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 4297)
+
+
+Started GET "/borrar.css" for 127.0.0.1 at 2024-06-16 16:41:38 +0200
+Processing by MainController#borrar as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/borrar.css.erb
+  Rendered main/borrar.css.erb (Duration: 0.7ms | Allocations: 191)
+Completed 200 OK in 14ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1847)
+
+
+Started POST "/borrar" for 127.0.0.1 at 2024-06-16 16:41:51 +0200
+Processing by MainController#borrar as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrar_desde"=>"1", "commit"=>"Borrar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1668)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2691)
+Completed 200 OK in 110ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 5322)
+
+
+Started POST "/borrar" for 127.0.0.1 at 2024-06-16 16:41:59 +0200
+Processing by MainController#borrar as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrar_desde"=>"-1", "commit"=>"Borrar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1669)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2692)
+Completed 200 OK in 41ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 5228)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-06-16 16:42:01 +0200
+Processing by MainController#inicio as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2287)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3310)
+Completed 200 OK in 42ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 6031)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:42:02 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 19ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 2792)
+
+
+Started GET "/inicio?selected_IP=&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:42:05 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_IP"=>"", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2331)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3364)
+Completed 200 OK in 33ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 6117)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:42:05 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 27ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 2809)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2024-06-16 16:42:08 +0200
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 79ms (ActiveRecord: 0.1ms | Allocations: 8587)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-16 16:42:08 +0200
+Processing by MainController#inicio as TURBO_STREAM
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 295)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-06-16 16:42:08 +0200
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 778)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1938)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 2570)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2024-06-16 16:44:32 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"aa@aa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aa@aa"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 179ms (ActiveRecord: 0.1ms | Allocations: 1565)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"aa@aa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 770)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 1917)
+Completed 200 OK in 188ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 2469)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2024-06-16 16:44:39 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"aa@aa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aa@aa"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 183ms (ActiveRecord: 0.1ms | Allocations: 2323)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-16 16:44:40 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 10.3ms | Allocations: 2328)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3352)
+Completed 200 OK in 46ms (Views: 13.4ms | ActiveRecord: 0.1ms | Allocations: 6106)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:44:40 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 26ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2802)
+
+
+Started GET "/inicio?selected_IP=192.168.1.14&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:44:51 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_IP"=>"192.168.1.14", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2021)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3044)
+Completed 200 OK in 25ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 5570)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:44:51 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 26ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2783)
+
+
+Started GET "/inicio?selected_IP=&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:44:56 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_IP"=>"", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2331)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 3364)
+Completed 200 OK in 34ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 6110)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:44:56 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 31ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2800)
+
+
+Started GET "/inicio?selected_mac=38%3A6B%3A1C%3A30%3A80%3AFD&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:45:00 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_mac"=>"38:6B:1C:30:80:FD", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2025)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3056)
+Completed 200 OK in 36ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 5621)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:45:00 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 30ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 2804)
+
+
+Started GET "/inicio?selected_mac=&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:45:07 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_mac"=>"", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2288)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3311)
+Completed 200 OK in 39ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 6077)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:45:07 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 30ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 2796)
+
+
+Started GET "/inicio?selected_tipo=STANDARD&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:45:12 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_tipo"=>"STANDARD", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2287)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3311)
+Completed 200 OK in 37ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 6083)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:45:12 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 29ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2781)
+
+
+Started GET "/inicio?selected_tipo=&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:45:18 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_tipo"=>"", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2287)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3310)
+Completed 200 OK in 36ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 6058)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:45:18 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 30ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2783)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-06-16 16:45:19 +0200
+Processing by MainController#borrar as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1713)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2747)
+Completed 200 OK in 14ms (Views: 9.2ms | ActiveRecord: 0.1ms | Allocations: 4334)
+
+
+Started GET "/export_csv.csv" for 127.0.0.1 at 2024-06-16 16:45:21 +0200
+Processing by MainController#export_csv as CSV
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Sent data escaneo-redes-2024-06-16_16-45-21.csv (0.7ms)
+Completed 200 OK in 31ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 2902)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-06-16 16:46:07 +0200
+Processing by MainController#inicio as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2306)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3337)
+Completed 200 OK in 37ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 6102)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2024-06-16 16:46:08 +0200
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 5ms (ActiveRecord: 0.1ms | Allocations: 1722)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-16 16:46:08 +0200
+Processing by MainController#inicio as TURBO_STREAM
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 301)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-06-16 16:46:08 +0200
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 777)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 1925)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2565)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2024-06-16 16:46:36 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"aa@aa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aa@aa"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 179ms (ActiveRecord: 0.1ms | Allocations: 2342)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-16 16:46:37 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2290)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3313)
+Completed 200 OK in 40ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 6048)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:46:37 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 23ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 2808)
+
+
+Started GET "/inicio?selected_IP=192.168.1.16&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:46:51 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_IP"=>"192.168.1.16", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2059)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3082)
+Completed 200 OK in 33ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 5645)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:46:51 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 23ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2794)
+
+
+Started GET "/inicio?selected_IP=&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:46:57 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_IP"=>"", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2331)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3366)
+Completed 200 OK in 27ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 6117)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:46:57 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 28ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 2797)
+
+
+Started GET "/inicio?selected_mac=18%3A34%3AAF%3A10%3A91%3A2A&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:47:01 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_mac"=>"18:34:AF:10:91:2A", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2074)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3097)
+Completed 200 OK in 29ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 5680)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:47:01 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 32ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2786)
+
+
+Started GET "/inicio?selected_mac=&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:47:10 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_mac"=>"", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2288)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3311)
+Completed 200 OK in 27ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 6065)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:47:10 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 32ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 2804)
+
+
+Started GET "/inicio?selected_tipo=STANDARD&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:47:14 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_tipo"=>"STANDARD", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2287)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3310)
+Completed 200 OK in 25ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 6061)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:47:14 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 18ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2808)
+
+
+Started GET "/inicio?selected_tipo=&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:47:21 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_tipo"=>"", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2288)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3311)
+Completed 200 OK in 38ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 6068)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:47:21 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 34ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2796)
+
+
+Started GET "/export_csv.csv" for 127.0.0.1 at 2024-06-16 16:47:29 +0200
+Processing by MainController#export_csv as CSV
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Sent data escaneo-redes-2024-06-16_16-47-29.csv (0.7ms)
+Completed 200 OK in 26ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 2947)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-06-16 16:47:50 +0200
+Processing by MainController#borrar as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1714)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2747)
+Completed 200 OK in 14ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 4346)
+
+
+Started GET "/borrar.css" for 127.0.0.1 at 2024-06-16 16:47:50 +0200
+Processing by MainController#borrar as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/borrar.css.erb
+  Rendered main/borrar.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 1651)
+
+
+Started POST "/borrar" for 127.0.0.1 at 2024-06-16 16:47:59 +0200
+Processing by MainController#borrar as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrar_desde"=>"1", "commit"=>"Borrar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1668)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2691)
+Completed 200 OK in 31ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 5258)
+
+
+Started POST "/borrar" for 127.0.0.1 at 2024-06-16 16:48:07 +0200
+Processing by MainController#borrar as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrar_desde"=>"3", "commit"=>"Borrar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1668)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2692)
+Completed 200 OK in 31ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 5221)
+
+
+Started POST "/borrar" for 127.0.0.1 at 2024-06-16 16:48:15 +0200
+Processing by MainController#borrar as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrar_desde"=>"-1", "commit"=>"Borrar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1668)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2691)
+Completed 200 OK in 27ms (Views: 7.5ms | ActiveRecord: 0.1ms | Allocations: 5259)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-06-16 16:48:16 +0200
+Processing by MainController#inicio as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2287)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3310)
+Completed 200 OK in 37ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 6061)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:48:17 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 31ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 2796)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2024-06-16 16:48:22 +0200
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 4ms (ActiveRecord: 0.1ms | Allocations: 1707)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-16 16:48:22 +0200
+Processing by MainController#inicio as TURBO_STREAM
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 304)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-06-16 16:48:22 +0200
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 777)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1939)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 2557)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2024-06-16 16:50:14 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"aa@aa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aa@aa"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 180ms (ActiveRecord: 0.1ms | Allocations: 1551)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"aa@aa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 762)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 1924)
+Completed 200 OK in 183ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 2425)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2024-06-16 16:50:20 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"aa@aa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aa@aa"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 182ms (ActiveRecord: 0.1ms | Allocations: 2312)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-16 16:50:21 +0200
+Processing by MainController#inicio as TURBO_STREAM
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2329)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 3352)
+Completed 200 OK in 34ms (Views: 11.1ms | ActiveRecord: 0.1ms | Allocations: 6099)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:50:21 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 20ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2795)
+
+
+Started GET "/inicio?selected_IP=192.168.1.16&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:50:36 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_IP"=>"192.168.1.16", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2059)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 3082)
+Completed 200 OK in 38ms (Views: 11.4ms | ActiveRecord: 0.1ms | Allocations: 5635)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:50:37 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 28ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 2790)
+
+
+Started GET "/inicio?selected_IP=&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:50:43 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_IP"=>"", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2287)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3310)
+Completed 200 OK in 37ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 6058)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:50:43 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 30ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 2809)
+
+
+Started GET "/inicio?selected_mac=38%3A6B%3A1C%3A30%3A80%3AFD&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:50:47 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_mac"=>"38:6B:1C:30:80:FD", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2058)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3092)
+Completed 200 OK in 38ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 5627)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:50:47 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 29ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2811)
+
+
+Started GET "/inicio?selected_mac=&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:50:58 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_mac"=>"", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2328)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3361)
+Completed 200 OK in 37ms (Views: 8.5ms | ActiveRecord: 0.1ms | Allocations: 6115)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:50:58 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 30ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 2804)
+
+
+Started GET "/inicio?selected_tipo=STANDARD&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:51:02 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_tipo"=>"STANDARD", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2287)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3310)
+Completed 200 OK in 36ms (Views: 8.2ms | ActiveRecord: 0.2ms | Allocations: 6071)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:51:02 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 32ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 2795)
+
+
+Started GET "/inicio?selected_tipo=&commit=Buscar" for 127.0.0.1 at 2024-06-16 16:51:14 +0200
+Processing by MainController#inicio as HTML
+  Parameters: {"selected_tipo"=>"", "commit"=>"Buscar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2288)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3311)
+Completed 200 OK in 33ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 6056)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:51:14 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 21ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 2772)
+
+
+Started GET "/export_csv.csv" for 127.0.0.1 at 2024-06-16 16:51:18 +0200
+Processing by MainController#export_csv as CSV
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Sent data escaneo-redes-2024-06-16_16-51-18.csv (0.7ms)
+Completed 200 OK in 20ms (Views: 0.6ms | ActiveRecord: 0.1ms | Allocations: 2914)
+
+
+Started GET "/borrar" for 127.0.0.1 at 2024-06-16 16:51:48 +0200
+Processing by MainController#borrar as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1670)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2693)
+Completed 200 OK in 12ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 4271)
+
+
+Started GET "/borrar.css" for 127.0.0.1 at 2024-06-16 16:51:49 +0200
+Processing by MainController#borrar as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/borrar.css.erb
+  Rendered main/borrar.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 0.1ms | Allocations: 1655)
+
+
+Started POST "/borrar" for 127.0.0.1 at 2024-06-16 16:51:57 +0200
+Processing by MainController#borrar as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "borrar_desde"=>"1", "commit"=>"Borrar"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/borrar.html.erb within layouts/application
+  Rendered main/borrar.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1712)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2746)
+Completed 200 OK in 34ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 5297)
+
+
+Started GET "/inicio" for 127.0.0.1 at 2024-06-16 16:52:12 +0200
+Processing by MainController#inicio as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering main/inicio.html.erb within layouts/application
+  Rendered main/inicio.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2330)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3361)
+Completed 200 OK in 34ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 6131)
+
+
+Started GET "/inicio.css" for 127.0.0.1 at 2024-06-16 16:52:13 +0200
+Processing by MainController#inicio as CSS
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering main/inicio.css.erb
+  Rendered main/inicio.css.erb (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 27ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 2800)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2024-06-16 16:52:18 +0200
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 6ms (ActiveRecord: 0.1ms | Allocations: 1701)
+
+
+Started GET "/" for 127.0.0.1 at 2024-06-16 16:52:18 +0200
+Processing by MainController#inicio as TURBO_STREAM
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 313)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-06-16 16:52:18 +0200
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.0ms | Allocations: 16)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 777)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 1924)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 2558)
+
+
